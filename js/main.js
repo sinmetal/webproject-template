@@ -1,6 +1,14 @@
+//main.js
+require.config({
+	baseUrl: 'js',
+	paths: {
+		'jquery': 'lib/jquery'
+	}
+});
+
 require([
-	'js/module/hoge',
-	'js/module/fuga'
+	'module/hoge',
+	'module/fuga'
 ], function(Hoge, Fuga) {
 	// Hogeにはhoge.jsで定義されたコンストラクタが渡る
 	var hoge = new Hoge();

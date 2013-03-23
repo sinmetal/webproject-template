@@ -1,5 +1,5 @@
 define([
-	'js/lib/jquery'
+	'lib/jquery'
 ], function($) {
 	var Hoge = function() {};
 	Hoge.prototype.awesomeThod = function() {
