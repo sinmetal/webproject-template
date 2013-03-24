@@ -1,6 +1,11 @@
 module.exports = function(grunt) {
   
   grunt.initConfig({
+    watch: {
+      files: './src/**',
+      tasks: ['requirejs']
+    },
+
     requirejs: {
       compile_top: {
         options: {
@@ -22,5 +27,6 @@ module.exports = function(grunt) {
     },
   });
 
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
 }
