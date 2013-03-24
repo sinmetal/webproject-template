@@ -1,1 +1,0 @@
-define(["lib/jquery"],function(e){var t=function(){};return t.prototype.awesomeThod=function(){console.log("Hellow RequireJS!")},t});

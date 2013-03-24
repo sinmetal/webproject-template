@@ -1,7 +1,0 @@
-
-js/main.js
-----------------
-js/lib/jquery.js
-js/module/hoge.js
-js/module/fuga.js
-js/main.js
