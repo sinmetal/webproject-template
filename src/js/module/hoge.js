@@ -6,5 +6,9 @@ define([
 		console.log('Hellow RequireJS!');
 	};
 
+	Hoge.prototype.outputLog = function(text) {
+		console.log(text);
+	};
+
 	return Hoge;
 });

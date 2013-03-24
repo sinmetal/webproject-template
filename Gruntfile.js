@@ -1,26 +1,25 @@
 module.exports = function(grunt) {
   
   grunt.initConfig({
-    // concat: {
-    //   basic: {
-    //     src: ['src/main.js'],
-    //     dest: 'dist/basic.js'
-    //   },
-    //   extras: {
-    //     src: ['src/main.js', 'src/extras.js'],
-    //     dest: 'dist/with_extras.js'
-    //   }
-    // }
     requirejs: {
-      compile: {
+      compile_top: {
         options: {
-          name : 'main',
+          name : 'main',  // mainで読み込むjsのpath
           baseUrl: "./src/js",
           mainConfigFile: './src/js/main.js',
-          out: "./build/out.js"
+          out: "./build/toppage.js"
+        }
+      },
+
+      compile_page1: {
+        options: {
+          name : 'page1/main',  // mainで読み込むjsのpath
+          baseUrl: "./src/js",
+          mainConfigFile: './src/js/page1/main.js',
+          out: "./build/page1.js"
         }
       }
-    }
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-requirejs');
