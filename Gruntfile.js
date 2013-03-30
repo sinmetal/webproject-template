@@ -27,6 +27,8 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-requirejs');
+  //matchdepでpackage.jsonから"grunt-*"で始まる設定を読み込む
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  //grunt.loadNpmTasks('grunt-contrib-watch');
+  //grunt.loadNpmTasks('grunt-contrib-requirejs');
 }
